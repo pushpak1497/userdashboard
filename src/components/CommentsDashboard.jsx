@@ -99,6 +99,8 @@ const CommentsDashboard = () => {
       return <ArrowDown className="w-4 h-4" />;
     return <ArrowUpDown className="w-4 h-4" />;
   };
+  if (comments.length == 0)
+    return <p className="text-center py-10">Loading...</p>;
 
   return (
     <div className="min-h-screen bg-muted px-4 py-6">
